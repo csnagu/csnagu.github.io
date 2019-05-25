@@ -16,6 +16,8 @@
 
         gtag('config', 'UA-17765726-10');
     </script>
+
+    <script type="text/javascript" src="js/ps2par_decode.js"></script>
 </head>
 
 <body>
@@ -33,29 +35,37 @@
 
 <section>
     <article>
-        PS2用のPARコードをPCSX2で使えるようにコンバートする系のやつ．
+        <h2>What's this</h2>
+        <p>
+        PS2用のPARコードをPCSX2で使えるようにコンバートする系のやつ．<br>
+        元ネタ：<a href="http://www.big.or.jp/~dram/ps2code.html">PS2PARコード変換スクリプト</a>
+        </p>
 
-        利用方法はこちらのページ：
-        <a href="https://blog.naguu.info/pcsx2-cheats/" target="_blank" rel="noopener noreferrer">PCSX2でチートコードを使う方法 - PS2用のPAR改造コードをPCSX2で使えるようにする</a>
-
-        <script type="text/javascript" src="js/ps2par_decode.js"></script>
-
-        <form action="" name="form1">
+        <hr>
+        <form action="" name="form1" style="width: 100%">
         <table>
         <tbody>
         <tr>
         <td align="center">
-        <h3>PAR用のコード</h3>
+        <h3>PARコード</h3>
         <textarea cols="35" name="text1" rows="20"></textarea></td>
         <td align="center"><input type="button" value="復号化" ,="" onclick="deconv()">
 
         <input type="reset" value="消 去"></td>
         <td align="center">
-        <h3>PCSX2で使えるチートコード：</h3>
+        <h3>PCSX2で使えるコード</h3>
         <textarea cols="35" name="text2" rows="20"></textarea></td>
         </tr>
         </tbody>
         </table>
+        </form>
+        <hr>
+
+        <h2>How to use</h2>
+        <img src="images/ps2par_manual.png" style="max-width:100%; height: auto; border:solid 1px #999; display:block; margin: 0 auto;" /><br>
+        <p>変換結果はpnachファイルにコピー</p>
+
+
     </article>
 </section>
 
