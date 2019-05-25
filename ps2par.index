@@ -1,0 +1,30 @@
+PS2用のPARコードをPCSX2で使えるようにコンバートする系のやつ．
+
+利用方法はこちらのページ：
+<a href="https://blog.naguu.info/pcsx2-cheats/" target="_blank" rel="noopener noreferrer">PCSX2でチートコードを使う方法 - PS2用のPAR改造コードをPCSX2で使えるようにする</a>
+
+<script type="text/javascript" src="https://blog.naguu.info/wp-content/uploads/2018/08/ps2par_decode.js"></script>
+
+<form action="" name="form1">
+<table>
+<tbody>
+<tr>
+<td align="center">
+<h3>PAR用のコード</h3>
+<textarea cols="35" name="text1" rows="20"></textarea></td>
+<td align="center"><input type="button" value="復号化" ,="" onclick="deconv()">
+
+<input type="reset" value="消 去"></td>
+<td align="center">
+<h3>PCSX2で使えるチートコード：</h3>
+<textarea cols="35" name="text2" rows="20"></textarea></td>
+</tr>
+</tbody>
+</table>
+</form>広告サービス：
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- cs_naguLab -->
+<ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-1361485893730260" data-ad-slot="8010612704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script><br />
+(adsbygoogle = window.adsbygoogle || []).push({});<br />
+</script>
