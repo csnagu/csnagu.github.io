@@ -1,30 +1,67 @@
-PS2用のPARコードをPCSX2で使えるようにコンバートする系のやつ．
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>cs_nagu info</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
 
-利用方法はこちらのページ：
-<a href="https://blog.naguu.info/pcsx2-cheats/" target="_blank" rel="noopener noreferrer">PCSX2でチートコードを使う方法 - PS2用のPAR改造コードをPCSX2で使えるようにする</a>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17765726-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-<script type="text/javascript" src="https://blog.naguu.info/wp-content/uploads/2018/08/ps2par_decode.js"></script>
+        gtag('config', 'UA-17765726-10');
+    </script>
+</head>
 
-<form action="" name="form1">
-<table>
-<tbody>
-<tr>
-<td align="center">
-<h3>PAR用のコード</h3>
-<textarea cols="35" name="text1" rows="20"></textarea></td>
-<td align="center"><input type="button" value="復号化" ,="" onclick="deconv()">
+<body>
+<header>
+    <h1>naguu.info</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="https://blog.naguu.info">blog</a></li> /
+        <li><a href="https://twitter.com/cs_nagu">twitter</a></li> /
+        <li><a href="https://github.com/csnagu">github</a></li> /
+        <li><a href="https://csnagu.github.io/ps2par.html">ps2par</a></li>
+    </ul>
+</nav>
 
-<input type="reset" value="消 去"></td>
-<td align="center">
-<h3>PCSX2で使えるチートコード：</h3>
-<textarea cols="35" name="text2" rows="20"></textarea></td>
-</tr>
-</tbody>
-</table>
-</form>広告サービス：
-<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- cs_naguLab -->
-<ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-1361485893730260" data-ad-slot="8010612704" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script><br />
-(adsbygoogle = window.adsbygoogle || []).push({});<br />
-</script>
+<section>
+    <article>
+        PS2用のPARコードをPCSX2で使えるようにコンバートする系のやつ．
+
+        利用方法はこちらのページ：
+        <a href="https://blog.naguu.info/pcsx2-cheats/" target="_blank" rel="noopener noreferrer">PCSX2でチートコードを使う方法 - PS2用のPAR改造コードをPCSX2で使えるようにする</a>
+
+        <script type="text/javascript" src="js/ps2par_decode.js"></script>
+
+        <form action="" name="form1">
+        <table>
+        <tbody>
+        <tr>
+        <td align="center">
+        <h3>PAR用のコード</h3>
+        <textarea cols="35" name="text1" rows="20"></textarea></td>
+        <td align="center"><input type="button" value="復号化" ,="" onclick="deconv()">
+
+        <input type="reset" value="消 去"></td>
+        <td align="center">
+        <h3>PCSX2で使えるチートコード：</h3>
+        <textarea cols="35" name="text2" rows="20"></textarea></td>
+        </tr>
+        </tbody>
+        </table>
+    </article>
+</section>
+
+<footer>
+    <address>© cs_nagu </address>
+</footer>
+
+</body>
+</html>
