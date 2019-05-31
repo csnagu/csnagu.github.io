@@ -1,5 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^naguu.info$
-RewriteRule ^(.*)$ https://naguu.info/$1 [R=301,L] 
-
