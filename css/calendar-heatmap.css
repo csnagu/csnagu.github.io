@@ -1,0 +1,27 @@
+text.month-name,
+text.calendar-heatmap-legend-text,
+text.day-initial {
+  font-size: 10px;
+  fill: inherit;
+  font-family:　-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+rect.day-cell:hover {
+  stroke: #888;
+  stroke-width: 1px;
+}
+.day-cell-tooltip {
+  position: absolute;
+  z-index: 9999;
+  padding: 5px 9px;
+  color: #fcfcfc;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
+  text-align: center;
+}
+.day-cell-tooltip > span {
+  font-family:　-apple-system BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+.calendar-heatmap {
+  box-sizing: initial;
+}
