@@ -84,7 +84,7 @@ article h1{
     width: 100%;
     font-size: 150%;
     color: #313131;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding-bottom:2px;
     padding-top: 10px;
     border-bottom: 1px solid #bababa;
@@ -95,7 +95,7 @@ article h2{
     width: 100%;
     font-size: 120%;
     color: #313131;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding-top: 10px;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -104,8 +104,8 @@ article h2{
 article p{
     font-size: 90%;
     color: #313131;
-    letter-spacing: 3px;
-    line-height: 150%;
+    letter-spacing: 1px;
+    line-height: 130%;
     margin-bottom: 10px;
     padding-left: 10px;
     /* float: left; */
