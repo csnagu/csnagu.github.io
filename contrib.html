@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>青い芝生</title>
+  <link rel="stylesheet" type="text/css" href="css/calendar-heatmap.css">
+
+  <script src="js/moment.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/calendar-heatmap.js"></script>
+</head>
+
+<body>
+  <div class="container"></div>
+
+  <script src="contributions.json"></script>
+  <script type="text/javascript">
+    var now = moment().endOf('day').toDate();
+    var yearAgo = moment().startOf('day').subtract(1, 'year').toDate();
+
+    var initData = d3.timeDays(yearAgo, now).map(function (dateElement) {
+      dateElement;
+      return {
+        date: dateElement,
+        count: 0
+      };
+    });
+
+    function getMax(arr, prop) {
+      var max;
+      for (var i=0 ; i<arr.length ; i++) {
+          if (!max || parseInt(arr[i][prop]) > parseInt(max[prop]))
+              max = arr[i];
+      }
+      return max[prop];
+    }
+    var maxCount = getMax(jsonData, "count");
+
+    var heatmap = calendarHeatmap()
+      .externalData(jsonData)
+      .data(initData)
+      .selector('.container')
+      .tooltipEnabled(true)
+      .colorRange(['#f4f7f7', '#afeeee'])
+      .max(maxCount)
+      .onClick(function (data) {
+        console.log('data', data);
+      });
+    heatmap();
+  </script>
+
+</body>
+
+</html>

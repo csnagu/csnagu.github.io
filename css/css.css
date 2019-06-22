@@ -1,6 +1,6 @@
 body{
-    font: 14px/1.6
-    font-family　-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font: 12px/1.6;
+    font-family:　-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
     margin: 10px auto;
     width: 100%;
     color: #666;
@@ -70,6 +70,11 @@ section{
     /* border-top: 1px solid #bababa; */
     /* border: 1px solid #333;  */
 }
+
+section p {
+    font-family:　-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+
 article{
     padding: 2.5%;
     margin-bottom: 30px;
@@ -97,7 +102,7 @@ article h2{
     float: left;
 }
 article p{
-    font-size: 100%;
+    font-size: 90%;
     color: #313131;
     letter-spacing: 3px;
     line-height: 150%;
