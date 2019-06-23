@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <div class="container"></div>
-
   <script src="https://nagu-lawn-api.herokuapp.com/lawn"></script>
+
+  <div class="container"></div>
   <script type="text/javascript">
     var now = moment().endOf('day').toDate();
     var yearAgo = moment().startOf('day').subtract(1, 'year').toDate();
@@ -47,7 +47,6 @@
       });
     heatmap();
   </script>
-
 </body>
 
 </html>
