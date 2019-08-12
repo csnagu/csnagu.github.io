@@ -14,7 +14,7 @@ rect.day-cell:hover {
   display: inline-block;
   position: absolute;
   padding: 5px 10px;
-  margin-top: -30px;
+  margin-top: -20px;
   color: #fcfcfc;
   font-size: 12px;
   background: rgba(0, 0, 0, 0.274);
