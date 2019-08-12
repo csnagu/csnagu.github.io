@@ -47,17 +47,14 @@ function calendarHeatmap() {
 
     counterMap= {};
     data.forEach(function (element, index) {
-        var key= moment(element.date).format( 'YYYY-MM-DD' );
+        var key= moment(element.date).format( 'YYYY/MM/DD' );
         var counter= counterMap[key] || 0;
 
-        var matchData = externalData.filter(function(item, index) {
-          if (item.date == key) {
-            return true;
+        var matchData = Object.keys(externalData).filter((exKey) => {
+          if (exKey == key) {
+            counterMap[key] = counter + externalData[exKey]
           }
         });
-        if (matchData.length > 0){
-          counterMap[key]= counter + matchData[0].count;
-        }
     });
 
     return chart;
@@ -258,14 +255,14 @@ function calendarHeatmap() {
     }
 
     function tooltipHTMLForDate(d) {
-      var dateStr = moment(d).format('ddd, YYYY-MM-DD');
+      var dateStr = moment(d).format('ddd, YYYY/MM/DD');
       var count = countForDate(d);
       return '<span><strong>' + (count ? count : locale.No) + ' ' + pluralizedTooltipUnit(count) + '</strong> '
       + locale.on + ' ' + dateStr + '</span>';
     }
 
     function countForDate(d) {
-        var key= moment(d).format( 'YYYY-MM-DD' );
+        var key= moment(d).format( 'YYYY/MM/DD' );
         return counterMap[key] || 0;
     }
 

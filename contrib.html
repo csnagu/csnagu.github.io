@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>青い芝生</title>
@@ -10,14 +11,12 @@
 </head>
 
 <body>
-  <script src="https://nagu-lawn-api.herokuapp.com/lawn"></script>
-
   <div class="container"></div>
   <script type="text/javascript">
-    var now = moment().endOf('day').toDate();
-    var yearAgo = moment().startOf('day').subtract(1, 'year').toDate();
+    const now = moment().endOf('day').toDate();
+    const yearAgo = moment().startOf('day').subtract(1, 'year').toDate();
 
-    var initData = d3.timeDays(yearAgo, now).map(function (dateElement) {
+    const initData = d3.timeDays(yearAgo, now).map(function (dateElement) {
       dateElement;
       return {
         date: dateElement,
@@ -25,17 +24,10 @@
       };
     });
 
-    function getMax(arr, prop) {
-      var max;
-      for (var i=0 ; i<arr.length ; i++) {
-          if (!max || parseInt(arr[i][prop]) > parseInt(max[prop]))
-              max = arr[i];
-      }
-      return max[prop];
-    }
-    var maxCount = getMax(jsonData, "count");
+    const jsonData = jsonGet("https://nagu-lawn-api.herokuapp.com/lawn");
+    const maxCount = getMax(jsonData);
 
-    var heatmap = calendarHeatmap()
+    const heatmap = calendarHeatmap()
       .externalData(jsonData)
       .data(initData)
       .selector('.container')
@@ -46,6 +38,23 @@
         console.log('data', data);
       });
     heatmap();
+
+    function jsonGet(yourUrl) {
+      const Httpreq = new XMLHttpRequest(); // a new request
+      Httpreq.open("GET", yourUrl, false);
+      Httpreq.send(null);
+      return JSON.parse(Httpreq.responseText);
+    }
+
+    function getMax(obj) {
+      let max = 0;
+      Object.keys(obj).forEach((key) => {
+        if (max < obj[key]) {
+          max = obj[key]
+        }
+      })
+      return max;
+    }
   </script>
 </body>
 
