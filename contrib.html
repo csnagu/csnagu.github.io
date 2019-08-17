@@ -24,7 +24,7 @@
       };
     });
 
-    const jsonData = jsonGet("https://nagu-lawn-api.herokuapp.com/lawn");
+    const jsonData = jsonGet("https://b8af89yqkf.execute-api.ap-northeast-1.amazonaws.com/get_lawn/lawn");
     const maxCount = getMax(jsonData);
 
     const heatmap = calendarHeatmap()
