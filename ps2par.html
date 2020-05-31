@@ -1,77 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>cs_nagu info - ps2par</title>
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
-    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17765726-10"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-17765726-10"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-17765726-10');
+      gtag("config", "UA-17765726-10");
     </script>
 
     <script type="text/javascript" src="js/ps2par_decode.js"></script>
-</head>
+  </head>
 
-<body>
-<header>
-    <h1>naguu.info</h1>
-</header>
-<nav>
-    <ul>
-        <li><a href="https://nagu.hatenablog.jp/">blog</a></li> /
-        <li><a href="https://twitter.com/cs_nagu">twitter</a></li> /
-        <li><a href="https://github.com/csnagu">github</a></li> /
+  <body>
+    <header>
+      <h1>naguu.info</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="https://nagu.hatenablog.jp/">blog</a></li>
+        /
+        <li><a href="https://twitter.com/cs_nagu">twitter</a></li>
+        /
+        <li><a href="https://github.com/csnagu">github</a></li>
+        /
         <li><a href="https://csnagu.github.io/">home</a></li>
-    </ul>
-</nav>
+      </ul>
+    </nav>
 
-<section>
-    <article>
+    <section>
+      <article>
         <h2>What's this</h2>
         <p>
-        PS2用のPARコードをPCSX2で使えるようにコンバートする系のやつ．<br>
-        元ネタ：<a href="http://www.big.or.jp/~dram/ps2code.html">PS2PARコード変換スクリプト</a>
+          PS2用のPARコードをPCSX2で使えるようにコンバートする系のやつ．<br />
+          元ネタ：<a href="http://www.big.or.jp/~dram/ps2code.html"
+            >PS2PARコード変換スクリプト</a
+          >
         </p>
 
-        <hr>
-        <form action="" name="form1" style="width: 100%">
-        <table>
-        <tbody>
-        <tr>
-        <td align="center">
-        <h3>PARコード</h3>
-        <textarea cols="35" name="text1" rows="20"></textarea></td>
-        <td align="center"><input type="button" value="復号化" ,="" onclick="deconv()">
+        <hr />
+        <form action="" name="form1" style="width: 100%;">
+          <table>
+            <tbody>
+              <tr>
+                <td align="center">
+                  <h3>PARコード</h3>
+                  <textarea cols="35" name="text1" rows="20"></textarea>
+                </td>
+                <td align="center">
+                  <input type="button" value="復号化" ,="" onclick="deconv()" />
 
-        <input type="reset" value="消 去"></td>
-        <td align="center">
-        <h3>PCSX2で使えるコード</h3>
-        <textarea cols="35" name="text2" rows="20"></textarea></td>
-        </tr>
-        </tbody>
-        </table>
+                  <input type="reset" value="消 去" />
+                </td>
+
+                <td align="center">
+                  <h3>PCSX2で使えるコード</h3>
+                  <textarea cols="35" name="text2" rows="20"></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </form>
-        <hr>
+        <hr />
 
         <h2>How to use</h2>
-        <img src="images/ps2par_manual.png" style="max-width:100%; height: auto; border:solid 1px #999; display:block; margin: 0 auto;" /><br>
+        <img
+          src="images/ps2par_manual.png"
+          style="
+            max-width: 100%;
+            height: auto;
+            border: solid 1px #999;
+            display: block;
+            margin: 0 auto;
+          "
+        /><br />
         <p>変換結果はpnachファイルにコピー</p>
+      </article>
+    </section>
 
+    <footer>
+      <address>© cs_nagu</address>
+    </footer>
 
-    </article>
-</section>
-
-<footer>
-    <address>© cs_nagu </address>
-</footer>
-
-</body>
+    <!-- Google　AdSense -->
+    <script
+      data-ad-client="ca-pub-1361485893730260"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </body>
 </html>
