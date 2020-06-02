@@ -1,133 +1,147 @@
-body{
-    font: 12px/1.6;
-    font-family:　-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
-    margin: 10px auto;
-    width: 100%;
-    color: #666;
-    }
-a{
-    color:rgb(101, 193, 236);
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+body {
+  font: 12px/1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+    "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  margin: 10px auto;
+  width: 100%;
+  color: #666;
 }
-a:visited{
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+a {
+  color: rgb(101, 193, 236);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+a:visited {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 a:hover {
-    color: #F5A862;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+  color: #f5a862;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 h1 {
-    text-align: center;
-    font-size:  45px;
+  text-align: center;
+  font-size: 45px;
 }
 h2 {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 /***** NAV *****/
-nav{
-    width: 100%;
-    margin-bottom: 5px;
-    overflow: hidden;
+nav {
+  width: 100%;
+  margin-bottom: 5px;
+  overflow: hidden;
 }
-nav ul{
-    width: 100%;
-    text-align: center;
+nav ul {
+  width: 100%;
+  text-align: center;
 }
-nav li{
-    display: inline-block;
-    margin: 0px 0px;
-    padding: 10px;
-    line-height: 20px;
-    color: #313131;
-    cursor: pointer;
+nav li {
+  display: inline-block;
+  margin: 0px 0px;
+  padding: 10px;
+  line-height: 20px;
+  color: #313131;
+  cursor: pointer;
 }
-nav li:hover{
-    background-color: rgb(132, 196, 233);
-    transition: background-color 0.3s ease-out;
-    color: #ffffff;
-    border-radius:5px;
+nav li:hover {
+  background-color: rgb(132, 196, 233);
+  transition: background-color 0.3s ease-out;
+  color: #ffffff;
+  border-radius: 5px;
 }
-nav li:hover a{
-    color: #FFF;
+nav li:hover a {
+  color: #fff;
 }
 
 /*****ARTICLE*****/
-section{
-    display: block;
-    width: 90%;
-    max-width: 700px;
-    min-width: 300px;
-    margin: 20px auto;
-    overflow: hidden;
-    /* border-top: 1px solid #bababa; */
-    /* border: 1px solid #333;  */
+section {
+  display: block;
+  width: 90%;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  /* border-top: 1px solid #bababa; */
+  /* border: 1px solid #333;  */
 }
 
 section p {
-    font-family:　-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+    "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
 }
 
-article{
-    padding: 2.5%;
-    margin-bottom: 30px;
-    overflow: hidden;
+article {
+  padding: 2.5%;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
-article h1{
-    width: 100%;
-    font-size: 150%;
-    color: #313131;
-    letter-spacing: 2px;
-    padding-bottom:2px;
-    padding-top: 10px;
-    border-bottom: 1px solid #bababa;
-    margin-bottom: 15px;
-    float: left;
+article h1 {
+  width: 100%;
+  font-size: 150%;
+  color: #313131;
+  letter-spacing: 2px;
+  padding-bottom: 2px;
+  padding-top: 10px;
+  border-bottom: 1px solid #bababa;
+  margin-bottom: 15px;
+  float: left;
 }
-article h2{
-    width: 100%;
-    font-size: 120%;
-    color: #313131;
-    letter-spacing: 2px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    float: left;
+article h2 {
+  width: 100%;
+  font-size: 120%;
+  color: #313131;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  float: left;
 }
-article p{
-    font-size: 90%;
-    color: #313131;
-    letter-spacing: 1px;
-    line-height: 130%;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    /* float: left; */
+article p {
+  font-size: 90%;
+  color: #313131;
+  letter-spacing: 1px;
+  line-height: 130%;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  /* float: left; */
 }
 /****** profile ******/
 #prof {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
-footer{
-    font-size: 80%;
-    /* width: 90%; */
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 1px solid #bababa;
-    /* background-color: #313131; */
-    color: #666;
+footer {
+  font-size: 80%;
+  /* width: 90%; */
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #bababa;
+  /* background-color: #313131; */
+  color: #666;
 }
 
-footer address{
-    margin-top: 5px;
-    text-align: center;
+footer address {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.ads {
+  /* padding: 0px !important; */
+}
+.adleft {
+  float: left;
+  width: 336px;
+}
+.adright {
+  float: right;
+  width: 336px;
 }
